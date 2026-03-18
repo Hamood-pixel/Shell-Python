@@ -1,34 +1,43 @@
-[![progress-banner](https://backend.codecrafters.io/progress/shell/c1e54da7-4c27-46ec-9906-f89f1323e2e1)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python" />
+  <img src="https://img.shields.io/badge/Status-Building-yellow?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Platform-CodeCrafters-orange?style=for-the-badge" alt="CodeCrafters" />
 
-This is a starting point for Python solutions to the
-["Build Your Own Shell" Challenge](https://app.codecrafters.io/courses/shell/overview).
+  <br />
 
-In this challenge, you'll build your own POSIX compliant shell that's capable of
-interpreting shell commands, running external programs and builtin commands like
-cd, pwd, echo and more. Along the way, you'll learn about shell command parsing,
-REPLs, builtin commands, and more.
+  <h1>🐚 Shell-Craft: A Systems Journey</h1>
+  <p><i>Under Construction: Building a POSIX-compliant shell from the ground up.</i></p>
+  
+  <hr />
+</div>
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+### 🏗️ Current Status: Stage 1 (The REPL)
+I am currently implementing the core **Read-Evaluate-Print-Loop**. The shell can now display a prompt and wait for user input without exiting prematurely.
 
-# Passing the first stage
+### 🛠️ The Tech Stack
+* **Language:** Python 3.x
+* **Core Modules:** `sys` (for I/O), `os` (for process handling)
+* **Environment:** Windows / VS Code / PowerShell
 
-The entry point for your `shell` implementation is in `app/main.py`. Study and
-uncomment the relevant code, then run the command below to execute the tests on
-our servers:
+### 🛤️ Project Roadmap
+Below is the plan for the upcoming stages of development:
 
-```sh
-codecrafters submit
-```
+| Stage | Feature | Status |
+| :--- | :--- | :--- |
+| 1 | **The Prompt** | ✅ Completed |
+| 2 | **Exit Command** | 🚧 In Progress |
+| 3 | **Echo Built-in** | ⏳ Planned |
+| 4 | **Type Command** | ⏳ Planned |
+| 5 | **Program Execution** | ⏳ Planned |
 
-Time to move on to the next stage!
+### 🧠 The Build Log
+> **Current Challenge:** Handling `stdout` buffering. 
+> Because Python buffers output, the prompt `$ ` doesn't always appear immediately. I'm using `sys.stdout.flush()` to force the terminal to show the prompt before the user types.
 
-# Stage 2 & beyond
+### 📂 How to Run (Development Mode)
+```bash
+# Clone the build
+git clone [https://github.com/YOUR_USERNAME/codecrafters-shell-python.git](https://github.com/YOUR_USERNAME/codecrafters-shell-python.git)
 
-Note: This section is for stages 2 and beyond.
-
-1. Ensure you have `uv` installed locally
-1. Run `./your_program.sh` to run your program, which is implemented in
-   `app/main.py`.
-1. Run `codecrafters submit` to submit your solution to CodeCrafters. Test
-   output will be streamed to your terminal.
+# Run the current iteration
+python3 -m app.main
