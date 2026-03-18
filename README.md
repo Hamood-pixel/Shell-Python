@@ -37,7 +37,7 @@ Below is the plan for the upcoming stages of development:
 ### 📂 How to Run (Development Mode)
 ```bash
 # Clone the build
-git clone [https://github.com/YOUR_USERNAME/codecrafters-shell-python.git](https://github.com/YOUR_USERNAME/codecrafters-shell-python.git)
+git clone [https://github.com/Hamood-pixel/codecrafters-shell-python.git](https://github.com/Hamood-pixel/codecrafters-shell-python.git)
 
 # Run the current iteration
 python3 -m app.main
