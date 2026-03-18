@@ -11,8 +11,8 @@ def main():
             print(command[5:])
         if command =="exit":
             break 
-        print(f"{command}: command not found")
-        
+        else:
+          print(f"{command}: command not found")
         pass
 
 
