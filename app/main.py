@@ -7,9 +7,10 @@ def main():
         sys.stdout.flush()
 
         command = input()
+        if command =="exit":
+            break 
         print(f"{command}: command not found")
-        if command == "exit":
-            break #Exit the shell/loop when the user types exit 
+        
         pass
 
 
